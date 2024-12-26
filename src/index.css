@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  --main-color: #0D6EFD;
+  --onboard-color:  #1483C2;
+  --text-color: #ECECEC;
+  --border:  #FFB21A;
+  --font: #2B2B2B;
+ --grey: #707B81;
+--placeholder: #6A6A6A;
+--input: #F7F7F9;
+
+
+  --raleway: "Raleway", sans-serif;
+  --poppins: "Poppins", serif;
+
+  --biggest-font: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+  --big-font: clamp(2rem, 1.125rem + 3.1429vw, 3.625rem);
+  --h1-font: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
+  --h2-font: 30px;
+  --h3-font: 28px;
+  --h4-font: 24px;
+  --h5-font: 22px;
+  --largest-font: 21px;
+  --larger-font: 20px;
+  --large-font: 18px;
+  --normal-font: 16px;
+  --small-font: 15px;
+  --smaller-font: 14px;
+  --tiny-font: 13px;
+  --tiny-font-2: 12px;
+  --tiny-font-3: 11px;
+  --font: 10px;
+  --font-2: 8px;
+}
+
+a {
+  text-decoration: none; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+
+  }
