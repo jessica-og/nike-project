@@ -6,6 +6,8 @@ import SignIn from './components/auth/SignIn';
 import Register from './components/auth/Register';
 import Home from './components/home/Home';
 import ForgotPassword from "./components/auth/ForgotPassword";
+import Detailspage from "./pages/Detailspage";
+import WishlistPage from './pages/WishlistPage';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
 <Route path="/register" element={<Register/>} />
 <Route path="/password-reset" element={<ForgotPassword/>} />
 <Route path="/home" element={<Home/>} />
+<Route path="/details" element={<Detailspage/>} />
+<Route path="/wishlist" element={<WishlistPage/>} />
 
 </Routes>
     </BrowserRouter>

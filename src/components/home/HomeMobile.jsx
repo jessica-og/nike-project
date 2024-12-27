@@ -1,12 +1,11 @@
 import { FaBagShopping } from "react-icons/fa6";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { Link } from "react-router-dom";
-import './home.css';
 
 
 const Home = () => {
   return (
-    <div className="home-cnt">
+    <div className="home-container">
       <div className="header">
         <img src="/menu.png" alt="" />
         <div className="top-text">
@@ -100,7 +99,13 @@ const Home = () => {
     </div>
   </div>
 
-  
+  <div className="cart-btn">
+   <img src="/cart.png" alt="" />
+  </div>
+  <div className="bottom-btn">
+    <img src="/btn-bg.png" alt="" />
+    <img src="/icons.png" alt="" />
+  </div>
   </div>
 
     </div>
