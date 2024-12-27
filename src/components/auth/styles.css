@@ -177,7 +177,7 @@ form.register .google a {
 }
 
 .info-text {
-  color: var(--grey);
+  color: var(--grey);  
 }
 
 .login-link {
@@ -190,6 +190,57 @@ form.register .google a {
 .login-link:hover {
   color: #0056b3;
 }
+
+/* password reset */
+
+/* Popup Styles */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.popup img {
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.popup-text h2{
+font-weight: 700;
+font-size: var(--normal-font);
+line-height: 20px;
+color: var(--font);
+}
+.popup p {
+  font-size: var(--normal-font);
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--grey);
+  font-family: var(--poppins);
+  margin-bottom: 20px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -214,6 +265,15 @@ form.register .google a {
     padding: 0.7rem;
     font-size: var(--tiny-font);
   }
+  .popup {
+    padding: 15px;
+  }
+
+  .popup img {
+    width: 44px;
+    height: 44px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -237,9 +297,21 @@ form.register .google a {
     padding: 0.6rem;
     font-size: var(--font);
   }
-
+  .popup p {
+    font-size: 14px;
+  }
+  .popup {
+    max-width: 250px;
+  }
   form.register .submit button {
     padding: 0.6rem;
     font-size: var(--font);
   }
+}
+@media (max-width: 280px) {
+
+  .popup {
+    max-width: 200px;
+  }
+ 
 }

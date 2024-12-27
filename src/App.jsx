@@ -5,6 +5,8 @@ import WelcomePage from './pages/WelcomePage';
 import SignIn from './components/auth/SignIn';
 import Register from './components/auth/Register';
 import Home from './components/home/Home';
+import ForgotPassword from "./components/auth/ForgotPassword";
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
 <Route path="/*" element={<WelcomePage/>} />
 <Route path="/sign-in" element={<SignIn/>} />
 <Route path="/register" element={<Register/>} />
+<Route path="/password-reset" element={<ForgotPassword/>} />
 <Route path="/home" element={<Home/>} />
 
 </Routes>

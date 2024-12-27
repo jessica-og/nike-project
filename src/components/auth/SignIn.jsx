@@ -76,7 +76,7 @@ const SignIn = () => {
           </li>
 
           <li className="recovery">
-            <Link to="/password-recovery">Recover Password</Link>
+            <Link to="/password-reset">Recover Password</Link>
           </li>
 
           <li className="submit">
