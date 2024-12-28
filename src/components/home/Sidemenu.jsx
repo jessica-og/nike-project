@@ -50,7 +50,7 @@ const Sidemenu = ({ closeSidebar }) => {
       <div className="sidemenu-header">
         <button className="close-button" onClick={closeSidebar}>X</button>
       </div>
-      <div className="profile-img">
+      <div className="profile-img-side">
         <img src="/avatar.png" alt="Profile" />
         <h2>{userName}</h2>
       </div>

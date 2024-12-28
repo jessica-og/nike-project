@@ -23,18 +23,22 @@
   font-size: var(--large-font);
   cursor: pointer;
   color: #fff;
+  text-align: right;
+}
+.close-button:hover{
+  background: none;
 }
 
-.profile-img {
+.profile-img-side {
   text-align: left;
   padding: 10px 20px;
 }
-.profile-img h2 {
+.profile-img-side h2 {
   font-weight: 500;
   font-size: var(--larger-font);
   color: #fff;
 }
-.profile-img img {
+.profile-img-side img {
   width: 60px;
   border-radius: 50%;
 }

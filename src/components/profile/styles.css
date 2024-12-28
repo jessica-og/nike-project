@@ -75,11 +75,11 @@ button {
   }
   .profile-img i {
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     right: 15px;
     background-color: var(--main-color);
     color: white;
-    padding: 6px;
+    padding: 8px;
     border-radius: 50%;
     cursor: pointer;
     font-size: var(--font);
