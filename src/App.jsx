@@ -8,6 +8,8 @@ import Home from './components/home/Home';
 import ForgotPassword from "./components/auth/ForgotPassword";
 import Detailspage from "./pages/Detailspage";
 import WishlistPage from './pages/WishlistPage';
+import Profile from './components/profile/Profile';
+import EditProfile from "./components/profile/EditProfile";
 
 
 function App() {
@@ -19,9 +21,12 @@ function App() {
 <Route path="/sign-in" element={<SignIn/>} />
 <Route path="/register" element={<Register/>} />
 <Route path="/password-reset" element={<ForgotPassword/>} />
+<Route path="profile" element={<Profile/>} />
+<Route path="edit-profile" element={<EditProfile/>} />
 <Route path="/home" element={<Home/>} />
 <Route path="/details" element={<Detailspage/>} />
 <Route path="/wishlist" element={<WishlistPage/>} />
+
 
 </Routes>
     </BrowserRouter>

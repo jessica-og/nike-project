@@ -1,31 +1,52 @@
-import { FaBagShopping } from "react-icons/fa6";
+
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { Link } from "react-router-dom";
 import './home.css';
+import { useState } from "react";
+import Sidemenu from "./Sidemenu";
 
 
 const Home = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="home-cnt">
+     {isSidebarOpen && <Sidemenu closeSidebar={toggleSidebar} />}
       <div className="header">
-        <img src="/menu.png" alt="" />
+        <img src="/menu.png" alt="menu" 
+              onClick={toggleSidebar} 
+        />
         <div className="top-text">
           <img src="/m1.png" alt="" />
           <h2>Explore</h2>
         </div>
-        <FaBagShopping />
+        <i className="shopping-bag">
+          <span className="cart-num">4</span>
+          <img src="/bag.png" alt="" /></i>
       </div>
 
-<div className="search-container">
-<form >
-  <img src="/search.png" alt="" />
-  <input type="search"  name="search"/>
-   Looking for shoes
-</form>
-<Link to='/search'>
-<img src="/search2.png" alt="" />
-</Link>
-</div>
+      <div className="search-container">
+      <form className="search-form">
+      <div className="input-wrapper">
+    <img src="/search.png" alt="Search Icon" className="search-icon" />
+    <input
+      type="search"
+      name="search"
+      placeholder="Looking for shoes"
+      className="search-input"
+    />
+  </div>
+        <Link to="/search">
+          <button type="submit" className="search-button">
+            <img src="/search2.png" alt="Search Button" />
+          </button>
+        </Link>
+      </form>
+    </div>
 
 <div className="categories">
   <h5>Select Category</h5>
