@@ -162,6 +162,20 @@
   background-color: var(--main-color);
   color: #fff;
 }
+
+/* Products */
+.products-container {
+  margin: 1rem 0;
+}
+
+.product-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .head-text p {
   color: var(--main-color);
   cursor: pointer;
@@ -172,13 +186,55 @@
 .head-text p:hover {
   text-decoration: underline;
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-section {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-section li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-section .product-img img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.product-section h2 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.product-section span {
+  font-weight: bold;
+  color: var(--font);
+}
+
+.product-section .plus-icon img {
+  height: 20px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
 
 
 /* Arrivals */
-.products-container {
-  margin: 1rem 0;
-}
-
 .arrivals {
   margin: 2rem 0;
 }
@@ -241,7 +297,9 @@
     padding: 0.4rem 0.8rem;
   }
 
- 
+  .product-section li {
+    width: 120px;
+  }
 
   .arrivals-text h2, .product-text h2 {
     font-size: 1.2rem;

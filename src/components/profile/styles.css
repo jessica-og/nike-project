@@ -3,7 +3,7 @@
     width: 100%;
   
   }
-button {
+  .edit-button button {
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -16,7 +16,7 @@ button {
     transition: background-color 0.3s;
   }
   
-  button:hover {
+  .edit-button button:hover {
     background-color: #007bff;
   }
   
@@ -164,7 +164,7 @@ button {
 
   
   /* Button Alignment */
-  button {
+  .edit-button button {
     display: block;
     margin: 20px auto;
   }
@@ -185,7 +185,7 @@ button {
       font-size: 14px;
     }
   
-    button {
+    .edit-button button {
       font-size: 14px;
       padding: 8px 16px;
     }

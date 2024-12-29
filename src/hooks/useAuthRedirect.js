@@ -9,7 +9,7 @@ const useAuthRedirect = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate("/home");
+        navigate("/add-product");
       } else {
         navigate("/sign-in");
       }

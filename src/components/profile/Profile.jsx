@@ -23,7 +23,7 @@ const Profile = () => {
 
      <div className="btn-cnt">
      <Link to="/edit-profile">
-        <button>Edit Profile</button>
+        <button className="edit-button">Edit Profile</button>
       </Link>
      </div>
     </div>

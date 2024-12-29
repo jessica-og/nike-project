@@ -6,10 +6,9 @@ import SignIn from './components/auth/SignIn';
 import Register from './components/auth/Register';
 import Home from './components/home/Home';
 import ForgotPassword from "./components/auth/ForgotPassword";
-import Detailspage from "./pages/Detailspage";
-import WishlistPage from './pages/WishlistPage';
 import Profile from './components/profile/Profile';
 import EditProfile from "./components/profile/EditProfile";
+import AddProduct from "./pages/AddProduct";
 
 
 function App() {
@@ -24,8 +23,8 @@ function App() {
 <Route path="profile" element={<Profile/>} />
 <Route path="edit-profile" element={<EditProfile/>} />
 <Route path="/home" element={<Home/>} />
-<Route path="/details" element={<Detailspage/>} />
-<Route path="/wishlist" element={<WishlistPage/>} />
+<Route path="/add-product" element={<AddProduct/>} />
+
 
 
 </Routes>

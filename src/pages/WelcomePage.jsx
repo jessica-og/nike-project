@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles/welcome.css";
 import {  useNavigate } from "react-router-dom";
-import { handleAuthRedirect } from "../firebase/utils/authRedirect";
+import { handleAuthRedirect } from "../firebase/authRedirect";
 import { auth } from "../firebase/config";
 
 const Home = () => {
@@ -157,7 +157,7 @@ const Home = () => {
             </AnimatePresence>
             <div className="navigation-buttons">
               {slides.map((_, index) => (
-                <button
+                <button  
                   key={index}
                   className={
                     index === activeSlide ? "active-slide" : "inactive-slide"

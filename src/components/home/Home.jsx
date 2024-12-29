@@ -1,9 +1,10 @@
 
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+
 import { Link } from "react-router-dom";
 import './home.css';
 import { useState } from "react";
 import Sidemenu from "./Sidemenu";
+import Product from "../products/Product";
 
 
 const Home = () => {
@@ -48,9 +49,9 @@ const Home = () => {
       </form>
     </div>
 
-<div className="categories">
-  <h5>Select Category</h5>
-  <button> All Shoes</button>
+<div className="categories head-text">
+  <h2>Select Category</h2>
+  <button > All Shoes</button>
   <button> OutDoor</button>
   <button> Clothings</button>
   <button>Tennis </button>
@@ -59,45 +60,10 @@ const Home = () => {
 </div>
 
   <div className="products-container">
-    <div className="product-text">
-      <h2>Popular Shoes</h2>
-      <p>See all</p>
-    </div>
-    <div className="products">
-      <ul className="product-section">
-        <li>
-       <span> <MdOutlineFavoriteBorder /></span>
-         <div className="product-img">
-         <img src="/s1.png" alt="" />
-         </div>
-          <div className="product-details">
-            <h2>BEST SELLER</h2>
-            <h2>Nike Jordan</h2>
-            <span>$302.00</span>
-          </div>
-          <div className="plus-icon">
-            <img src="/plus.png" alt="" />
-          </div>
-        </li>
-        <li>
-       <span> <MdOutlineFavoriteBorder /></span>
-         <div className="product-img">
-         <img src="/s1.png" alt="" />
-         </div>
-          <div className="product-details">
-            <h2>BEST SELLER</h2>
-            <h2>Nike Jordan</h2>
-            <span>$302.00</span>
-          </div>
-          <div className="plus-icon">
-            <img src="/plus.png" alt="" />
-          </div>
-        </li>
-      </ul>
-    </div>
+   <Product />
 
   <div className="arrivals">
-  <div className="arrivals-text">
+  <div className="product-text head-text">
       <h2>New Arrivals</h2>
       <p>See all</p>
     </div>

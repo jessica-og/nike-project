@@ -63,7 +63,9 @@
   cursor: pointer;
   color: #fff;
 }
-
+.menu-label:hover{
+color: var(--border);
+}
 .link-icon {
   margin-right: 10px;
   font-size: var(--large-font);
