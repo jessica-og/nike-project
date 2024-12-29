@@ -9,4 +9,3 @@ To run app in the development mode run
 npm run dev
 
 
-# React + Vite
