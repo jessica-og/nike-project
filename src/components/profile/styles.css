@@ -108,7 +108,7 @@
 .edit-top h2{
     font-size: var(--larger-font);
     font-weight: 700;
-    color: var(--font);
+    color: var(--font-color);
 }
 .edit-top p{
     text-decoration: none;

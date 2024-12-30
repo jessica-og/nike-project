@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: #0D6EFD;
-  --onboard-color:  #1483C2;
-  --text-color: #ECECEC;
-  --border:  #FFB21A;
-  --font: #2B2B2B;
- --grey: #707B81;
---placeholder: #6A6A6A;
---dark: #292D32;
---input: #F7F7F9;
---wish-color: #F87265;
+  --main-color: #0d6efd;
+  --onboard-color: #1483c2;
+  --text-color: #ececec;
+  --border: #ffb21a;
+  --font-color: #2b2b2b;
+  --font-color2: #3b3b3b;
+  --purple: #674dc5;
+  --grey: #707b81;
+  --placeholder: #6a6a6a;
+  --dark: #292d32;
+  --input: #f7f7f9;
+  --wish-color: #f87265;
 
   --raleway: "Raleway", sans-serif;
   --poppins: "Poppins", serif;
@@ -40,23 +40,22 @@
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    font-family: "Raleway", sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
-
-  }
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}

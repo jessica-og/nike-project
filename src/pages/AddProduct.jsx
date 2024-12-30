@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import useAuthRedirect from './../hooks/useAuthRedirect';
 import './styles/addProduct.css';
 import { addProduct, uploadImageToCloudinary} from '../firebase/utils';
+import { IoIosArrowBack } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 
 const AddProduct = () => {
@@ -74,6 +76,8 @@ const AddProduct = () => {
 
   return (
     <div className="add-product-container">
+      <Link to='/home' className='back-link'>
+      <IoIosArrowBack /></Link>
       <h1 className="title">Add New Product</h1>
       <form className="add-product-form" onSubmit={handleSubmit}>
         <div className="form-group">

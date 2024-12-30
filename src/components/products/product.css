@@ -60,7 +60,10 @@
   height: 200px;
   object-fit: contain;
 }
-
+.wish-icon i {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 .wish-icon {
   position: absolute;
   top: 20px;
@@ -69,7 +72,9 @@
   color: var(--dark);
   cursor: pointer;
 }
-
+.wish-icon i:hover {
+  color: red;
+}
 .product-details {
   padding: 0 15px;
   text-align: left;
@@ -81,18 +86,27 @@
   font-size: var(--tiny-font-2);
   color: var(--main-color);
   font-family: var(--poppins);
+  text-transform: uppercase;
 }
+
 .product-details p {
   margin: 0;
   font-weight: 600;
   font-size: var(--normal-font);
   color: var(--placeholder);
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.product-details p::first-letter {
+  text-transform: uppercase;
 }
 
 .product-details span {
   font-weight: 500;
   font-size: var(--smaller-font);
-  color: var(--font);
+  color: var(--font-color);
   margin-top: 8px;
   line-height: 20px;
   display: block;

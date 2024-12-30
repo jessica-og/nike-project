@@ -24,7 +24,7 @@ form.register h2 {
   font-size: var(--h2-font);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--font);
+  color: var(--font-color);
   margin-top: 25px;
   line-height: 1.5rem;
   text-align: center;
@@ -59,7 +59,7 @@ form.register label {
   display: block;
   font-size: var(--normal-font);
   font-weight: 500;
-  color: var(--font);
+  color: var(--font-color);
   line-height: 35px;
   font-family: var(--raleway);
   margin-left: 5px;
@@ -157,7 +157,7 @@ form.register .google {
 form.register .google a {
   text-decoration: none;
   font-weight: 600;
-  color: var(--font);
+  color: var(--font-color);
   font-size: var(--smaller-font);
   margin-left: 0.5rem;
 }
@@ -181,7 +181,7 @@ form.register .google a {
 }
 
 .login-link {
-  color: var(--font);
+  color: var(--font-color);
   text-decoration: none;
   transition: color 0.3s ease;
   margin-left: 6px;
@@ -220,7 +220,7 @@ form.register .google a {
 font-weight: 700;
 font-size: var(--normal-font);
 line-height: 20px;
-color: var(--font);
+color: var(--font-color);
 }
 .popup p {
   font-size: var(--normal-font);
